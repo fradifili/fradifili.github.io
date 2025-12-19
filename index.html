@@ -89,6 +89,59 @@ background: url('images/wallpaper_3.jpg') no-repeat 40% 10%/cover;
         .highlight.reverse {
             flex-direction: row-reverse;
         }
+        @media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .header {
+        height: 300px;
+        background-position: center top;
+    }
+
+    .header-name {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6em;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .highlight {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .highlight.reverse {
+        flex-direction: column;
+    }
+
+    .highlight img {
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .highlight div {
+        width: 100% !important;
+        float: none !important;
+    }
+}
+
     </style>
 </head>
 <body>
