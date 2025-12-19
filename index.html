@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #e0f2f1;
+            color: #000;
+        }
+        /* Creates a fixed navigation bar at the top with links to different sections */
+        .navbar {
+            background: #01579b;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background: #0277bd;
+        }
+        .header {
+background: url('images/wallpaper_3.jpg') no-repeat 40% 10%/cover;
+    height: 470px;
+    position: relative; /* Needed for absolute positioning inside */
+    margin-top: 0px;
+}
+
+.header-name {
+    position: absolute;
+    top: 20%;               /* Adjust this to move it down */
+    left: 18%;
+    transform: translate(-50%, 0%);
+    color: #01579b;
+    font-size: 2em;
+}
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: justify;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .cv a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #01579b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cv a:hover {
+            background: #0277bd;
+        }
+        .highlight {
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #b3e5fc;
+        }
+        .highlight:nth-child(odd) {
+            background: #81d4fa;
+        }
+        .highlight img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .highlight.reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#talks">Recent/Future Talks</a>
+    </div>
+    <div class="header">
+        <div class="header-name">Francesco Di Filippo</div>
+    </div>
+    <div class="container">
+        <div id="about" class="section about">
+            <h2>About Me</h2>
+            <p>Hello, my name is Francesco and I am from Salerno, a beautiful city in the south of Italy.<br>
+ I obtained my Ph.D. in astroparticle physics under the supervision of Stefano Liberati in SISSA, Trieste, Italy. <br>
+After that, I moved to Kyoto, Prague, and I am now in Frankfurt. 
+There are many things I like to do when I am not doing physics. Among them are cooking and playing chess. If you like to play chess too, we can do it together <a href="https://lichess.org/@/Fradifili">here</a>.</p>
+        </div>
+        <div id="cv" class="section cv">
+            <h2>Curriculum Vitae</h2>
+            <p> <strong>Fellowships and Awards:</strong> MSCA fellowship, FCT Fellowship (declined), Humboldt Fellowship, JSPS fellowship; Václav Votruba Prize, fifth prize 2024 Awards for Essays on Gravitation by the Gravity Research Foundation Awards. Total ~ € 530.000.<br>
+<strong>Strong Publication Record:</strong> Author of 38 publications in high-impact journals, total citations: 2000 and h-index: 21.<br>
+<strong>Event Organizer:</strong> Organizer of multiple events and workshops, including serving as the lead organizer for the inaugural edition of the Black Holes Inside and Out conference series, held online in 2021. <br>
+<strong>Invited Speaker and Panellist:</strong> Invited speaker at 10 international conferences or workshops, selected plenary speaker at 1 international conference, invited panellist at 2 panel discussions, and invited to deliver several seminars in world-leading institutes.  <p>
+          <p style="text-align: center"><a href="CV/Di_Filippo_Curriculum.pdf" target="_blank">Download extended CV</a></p>
+        </div>
+        <div id="highlights" class="section">
+            <h2>Highlights</h2>
+            
+            <div class="highlight">
+                <div style="width:60%;float: left;">
+                   <h3>Marie Curie Postdoctoral Fellowship</h3>
+                   <p>[March 2025] I have been awarded the Marie Curie fellowship. </p>
+                </div>
+                <div style="width:3%;float: left;">
+                   <p> <p>
+                </div>   
+                <div style="width:35%;float: center;">
+                    <img src="images/MSCA.jpg" alt="MSCA logo" style="width:250px;height:auto;">
+                </div>
+            </div>
+
+            <p> <p>
+
+            <div class="highlight reverse">
+                    <div style="width:60%;float: left;">
+                         <h3>Frankfurt</h3>
+                       <p>[February 2025] I just moved to Frankfurt for my new position as a Humboldt. Excited for yet another new beginning.</p>
+                    </div>
+                    <div style="width:3%;float: left;">
+                        <p> <p>
+                    </div>   
+                    <div style="width:35%;float: center;">
+                        <img src="images/Frankfurt.JPG" alt="Frankfurt" style="width:300px;height:auto;">
+                    </div>   
+            </div>
+
+            <p> <p>
+
+            <div class="highlight">
+                <div style="width:60%;float: left;">
+                   <h3>Black Holes Inside and Out 2024</h3>
+                   <p>[August 2024] I was a member of the Scientific organizing committee of the second edition (this time in person!) of Black Holes Inside and Out.</p>
+                </div>
+                <div style="width:3%;float: left;">
+                   <p> <p>
+                </div>   
+                <div style="width:35%;float: center;">
+                    <img src="images/BHIO2024.png" alt="BHIO2024" style="width:250px;height:auto;">
+                </div>
+            </div>
+
+            <p> <p>
+            
+            <div class="highlight reverse">
+                    <div style="width:60%;float: left;">
+                         <h3>Nordita Summer School</h3>
+                       <p>[July 2024] I gave a short course on quantum effects in black holes spacetimes during the program “Quantum Gravity: From Gravitational Effective  Field Theories to Ultraviolet Complete Approaches” in Nordita. <p>
+                        <p>Here you can find the recording of the lectures.<p>
+                    </div>
+                    <div style="width:1%;float: left;">
+                        <p> <p>
+                    </div>   
+                    <div style="width:35%;float: centre;">
+                        <img src="images/qg2024_poster.jpeg" alt="Quantum Gravity Nordita" style="width:300px;height:auto;">
+                    </div>   
+            </div>
+
+            <p> <p>
+
+            <div class="highlight">
+                    <div style="width:70%;float: left;">
+                         <h3>Black Holes Inside and Out 2021</h3>
+                       <p>[August 2021] I organized the first edition of the Black Holes Inside and Out conference (online) All the contributions of the conference can be found at this <a href="https://www.youtube.com/@blackholesinsideandout592">link</a>.</p>
+                    </div>
+                    <div style="width:8%;float: center;">
+                        <p> <p>
+                    </div>   
+                    <div style="width:32%;float: center;">
+                        <img src="images/BHIO_2021.gif" alt="BHIO_2021.">
+                    </div>   
+            </div>
+
+            <p> <p>
+
+        <div id="talks" class="section">
+            <h2>Videos of talks/lectures</h2>
+            <p>The videos of some of my presentations are available online</p>
+        <ul>
+            <li><strong>27/06/2025</strong> — <strong>Invited talk</strong> at the conference “From Puzzles to New Insights in Fundamental Physics” in Campagna (SA), Italy. </em><a href="https://www.youtube.com/watch?v=FUHFvT-MUVo&list=PLXODNoO1MLHyGtyTivR9b1hGJvWz4VfYs&index=26">Towards a non singular paradigm for black holes</a></li>
+            <li><strong>08/04/2025</strong> — Seminar in Aveiro.</li>
+            <li><strong>12/12/2024</strong> — Lectures at the Nordita Ph.D. school <a href="https://www.youtube.com/watch?v=AwSabAeuX44">Introduction</a> - <a href="https://www.youtube.com/watch?v=EOAWAFtmIe8">Hawking radiation</a> - <a href="https://www.youtube.com/watch?v=y56Azm8kef0">Semiclassical stress-energy tensor</a> - <a href="https://www.youtube.com/watch?v=MdtaL0itUc4">Information loss problem</a>.</li>
+            <li><strong>23/10/2023</strong> — <strong>Invited talk</strong> at the conference “Puzzles in the Quantum Gravity Landscape”, Perimeter Institute, Canada. </em><a href="https://pirsa.org/23100013">Video</a></li></li>
+        </ul>
+        </div>
+        </body>
+</html>
+
+
+<script>
+    // Selects all internal anchor links that start with '#' for smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            // Smoothly scrolls to the selected section while adjusting for the navbar height
+            window.scrollTo({
+                top: target.offsetTop - document.querySelector('.navbar').offsetHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
